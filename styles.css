@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+video {
+    width: 70%;
+    object-fit: cover;
+}
