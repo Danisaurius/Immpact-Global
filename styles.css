@@ -12,20 +12,28 @@ body {
 
 .navBar {
     display: flex;
-    margin: 15px auto 0 auto;
+    margin: 0 auto;
+    padding: 15px;
     width: 65%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
 
 }
+
 
 #logoImage {
-    width:25%;
+    width: 25%;
+    max-height: 100px;
     object-fit: contain;
-
+    filter: drop-shadow(0 0 4px rgba(255, 208, 115, 0.8));
+    z-index: 2;
 }
+
 
 .nav-list {
     display: flex;
-    position: sticky;
     width: 70%;
     max-height: 40px;
     min-height: 40px;
@@ -86,6 +94,95 @@ a {
     text-shadow: 0 0 10px #ffffff;
 }
 
+.twoColorBackgrund {
+    height: 900px;
+    position: relative;
+    display: flex;
+    transform: translateY(-100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.leftColor {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    background-color: #c73f64;
+    z-index: 0;
+}
+.rightColor {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    background-color: #ffc655;
+    z-index: 0;
+}
+
+
+.contentHeader {
+    width: 80%;
+    height: 600px;
+    padding: 60px auto 0 auto;
+    /* border: 2px solid rgb(189, 86, 149); */
+    z-index: 2;
+    display: flex;
+    position: relative;
+    box-shadow: 6px 6px 7px rgba(41, 2, 1, 0.425)
+}
+
+.contentHeaderLeftSide{
+    width: 40%;
+    
+}
+
+#agentPicture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradientHeaderOver {
+    position: absolute;
+    width: 79.5%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(151, 36, 51, 0.6), rgba(151, 36, 107, 1)50%);
+    right: 0;
+    z-index: 2;
+}
+
+.contentHeaderRightSide{
+    width: 30%;
+    z-index: 3;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: left;
+    padding-top: 5%;
+    font-family: "Gabarito", sans-serif;
+    color: white;
+    font-size: 2.8vw;
+}
+
+#subtitleHeader{
+    text-align: left;
+    color: rgb(41, 2, 1);
+    line-height: 0.9;
+    font-weight: 1000;
+    font-size: 2.6vw;
+}
+
+#paragraphHeader {
+    color: white;
+    width: 90%;
+    margin: 25px 0;
+    font-size: 1.1vw;
+    
+}
+
 .heroContainer {
     margin: 40px auto;
     border-radius: 60px 60px 0 0px;
@@ -96,7 +193,7 @@ a {
 
 }
 
-h1 {
+h2 {
     text-align: center;
     padding-top: 5%;
     font-family: "Gabarito", sans-serif;
@@ -157,15 +254,24 @@ video {
 }
 
 @media (max-width: 850px) {
+
+    .twoColorBackgrund {
+    height: 800px;
+    position: relative;
+    transform: translateY(-200px);
+    }
+
+
     .navBar {
         flex-direction: column;
         max-height: 150px;
-        width: 90%;
+        width: 98%;
 
     }
 
     #logoImage {
     width: 90%;    
+    filter: drop-shadow(0 0 3px rgba(255, 198, 85, 0.8));
     }
 
     .nav-list {
@@ -173,5 +279,9 @@ video {
         width: 100%;
         min-height: 40px;
         margin-top: 18px;
+    }
+
+    .contentHeader {
+        margin-top: 240px;
     }
 }
