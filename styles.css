@@ -1,7 +1,7 @@
 * {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -51,7 +51,7 @@ body {
     box-shadow: 0 5px 6px #331d44;
 }
 
-.nav-list > li {
+.nav-list>li {
     list-style: none;
     width: 25%;
     background-color: transparent;
@@ -82,7 +82,9 @@ a {
 }
 
 
-#aboutUsButton:hover, #ServicesButton:hover, #ContactUsButton:hover   { 
+#aboutUsButton:hover,
+#ServicesButton:hover,
+#ContactUsButton:hover {
     background-color: #97246b;
     text-align: center;
     justify-content: center;
@@ -111,6 +113,7 @@ a {
     background-color: #c73f64;
     z-index: 0;
 }
+
 .rightColor {
     position: absolute;
     width: 70%;
@@ -129,12 +132,14 @@ a {
     z-index: 2;
     display: flex;
     position: relative;
-    box-shadow: 6px 6px 7px rgba(41, 2, 1, 0.425)
+    box-shadow: 6px 6px 7px rgba(41, 2, 1, 0.425);
+    margin-top: -50px;
+    
 }
 
-.contentHeaderLeftSide{
+.contentHeaderLeftSide {
     width: 40%;
-    
+
 }
 
 #agentPicture {
@@ -152,11 +157,11 @@ a {
     z-index: 2;
 }
 
-.contentHeaderRightSide{
+.contentHeaderRightSide {
     width: 30%;
     z-index: 3;
     margin-left: 15%;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 h1 {
@@ -167,7 +172,7 @@ h1 {
     font-size: 2.8vw;
 }
 
-#subtitleHeader{
+#subtitleHeader {
     text-align: left;
     color: rgb(41, 2, 1);
     line-height: 0.9;
@@ -180,6 +185,33 @@ h1 {
     width: 90%;
     margin: 25px 0;
     font-size: 1.1vw;
+
+}
+
+.buttonsContainerHeader {}
+
+.buttonsContainerHeader ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.buttonsContainerHeader ul li {
+    list-style: none;
+    background-color: #331d44;
+    color: #fff;
+    font-family: "Gabarito", sans-serif;
+    font-size: 1.3vw;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background-color 0.4s ease;
+
+}
+
+.buttonsContainerHeader ul li:hover {
+    background-color: #e96759;
     
 }
 
@@ -226,7 +258,7 @@ p {
 video {
     transform: translateY(-20%);
     width: 50%;
-    object-fit: contain;    
+    object-fit: contain;
 }
 
 
@@ -248,17 +280,17 @@ video {
     }
 
     #logoImage {
-    width: 220px;
-    transform: translateY(6px);
+        width: 220px;
+        transform: translateY(6px);
     }
 }
 
 @media (max-width: 850px) {
 
     .twoColorBackgrund {
-    height: 800px;
-    position: relative;
-    transform: translateY(-200px);
+        height: 800px;
+        position: relative;
+        transform: translateY(-200px);
     }
 
 
@@ -270,8 +302,8 @@ video {
     }
 
     #logoImage {
-    width: 90%;    
-    filter: drop-shadow(0 0 3px rgba(255, 198, 85, 0.8));
+        width: 90%;
+        filter: drop-shadow(0 0 3px rgba(255, 198, 85, 0.8));
     }
 
     .nav-list {
