@@ -2,11 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 1980px;
 
 }
 
 html {
     overflow-x: hidden;
+
+    margin: auto;
+
 }
 
 body {
@@ -19,13 +23,13 @@ body {
     width: 100%;
     height: 80px;
     position: fixed;
-    background-color: rgba(250, 208, 221, 0.418);
+    background-color: rgba(255, 239, 250, 0.4);
     z-index: 6;
     box-shadow: 0 4px 5px rgba(47, 2, 19, 0.441);
     border-radius: 0 0 40px 40px;
     transform: translateY(-100%);
     animation: dropDown 1.2s ease-out forwards;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
 
@@ -55,6 +59,7 @@ body {
     max-height: 100px;
     object-fit: contain;
     z-index: 2;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
 }
 
 
@@ -65,8 +70,9 @@ body {
     min-height: 40px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 60, 0, 0.2);
-    backdrop-filter: blur(7px);
+    background-color: rgba(35, 12, 99, 0.151);
+    /* /* backdrop-filter: blur(7px); */
+    /* background: url(Assets/Paper_Texture.webp); */
     border-radius: 30px;
     font-family: "Gabarito", sans-serif;
     font-size: 0.9vw;
@@ -106,7 +112,7 @@ a {
     padding: 5px 2px;
     align-items: center;
     border-radius: 26px;
-    box-shadow: 0 2px 3px #551e18;
+    box-shadow: 0 2px 3px #260346;
 }
 
 
@@ -148,7 +154,7 @@ a {
     width: 70%;
     height: 100%;
     left: 0;
-    background-color: #ffc655;
+    background-color: #180135;
     z-index: 0;
 }
 
@@ -294,7 +300,8 @@ h1 {
 
 .divider1Image {
     height: auto;
-    max-width: 100vw;
+    width: 100vw;
+    max-width: 1980px;
     margin-top: 0;
     top: 0;
     object-fit: cover;
@@ -317,7 +324,7 @@ h1 {
     width: 100%;
     position: absolute;
     height: 100%;
-    background: url(Assets/Background_Pattern1.webp);
+    background: url(Assets/Background_Pattern2.jpg);
     background-size: cover;
     opacity: 0.7;
     margin-top: 0px;
@@ -336,6 +343,7 @@ h1 {
     height: 70vh;
     background-image: url(Assets/white-crumpled-paper-texture-background.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 10px 10px rgba(78, 5, 50, 0.6);
     position: relative;
 
@@ -423,7 +431,7 @@ h2 {
     }
 
     .divider1Container {
-       bottom: -70px;
+        bottom: -70px;
     }
 
 
@@ -529,16 +537,16 @@ h2 {
     .buttonsContainerHeader ul li {
         font-size: 10px;
         margin-top: -10px;
-      
+
     }
 
     .divider1Container {
-   bottom: -100px
+        bottom: -100px
     }
 
     .heroContainer {
         margin-top: 10px auto;
-        
+
     }
 
     .gradientHeaderOver {
